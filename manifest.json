@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Get cookies",
+    "version": "1.0",
+  
+    "description": "Adds a button to get the current cookies in the Netscape cookie file format (used by curl and many other programs).",
+  
+    "icons": {
+        "48": "icons/cookie-light.svg"
+    },
+
+    "permissions": [
+        "<all_urls>",
+        "cookies",
+        "tabs"
+    ],
+
+    "browser_action": {
+        "default_icon": {
+            "48": "icons/cookie-light.svg"
+        },
+        "theme_icons": [
+            {
+                "dark": "icons/cookie-dark.svg",
+                "light": "icons/cookie-light.svg",
+                "size": 48
+            }
+        ],
+        "default_title": "Get cookies",
+        "default_popup": "popup.html"
+    }
+}
